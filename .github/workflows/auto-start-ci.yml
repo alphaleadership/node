@@ -20,7 +20,7 @@ jobs:
   get-prs-for-ci:
     permissions:
       pull-requests: read
-    if: github.repository == 'nodejs/node'
+    
     runs-on: ubuntu-latest
     outputs:
       numbers: ${{ steps.get_prs_for_ci.outputs.numbers }}
